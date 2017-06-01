@@ -1,5 +1,4 @@
 
-
 function addMemo(){
 	var memoText=document.getElementById('memoText').value;
 	if(memoText=='')
@@ -37,3 +36,17 @@ function rem(id){
 var x=id.parentElement.parentElement;
 x.parentNode.removeChild(x);
 }
+
+function storeLocally(){
+
+	var m=document.getElementById('body').innerHTML;
+	localStorage.setItem('saved',m);
+	
+}
+
+function retrive()
+{
+if(typeof localStorage.saved!=='undefined')
+	document.getElementById('body').innerHTML=localStorage.saved;
+}
+

@@ -16,7 +16,8 @@ clear: both;
 margin:0px;
 
 }
-#memo_container {
+.memo_container {
+	
 	
 	
 }
@@ -46,3 +47,8 @@ clear: both;
 .rmbtn {
 	
 	}
+.header{
+
+	background: black;
+	color: white;
+}
