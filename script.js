@@ -1,15 +1,18 @@
 
 
 function addMemo(){
+	var memoText=document.getElementById('memoText').value;
+	if(memoText=='')
+		alert("Pls Enter Some Text");
+	else {
 	var mc=document.getElementById('memo_container');
     var divElement=document.createElement('div');
     divElement.className='text_container';
-    var memoText=document.getElementById('memoText').value;
-    divElement.innerHTML="<div><input class='eBtn' type='button' value='Edit' onClick='edit(this);'> <input class='rmBtn' type='button' value='Remove' onClick='rem(this);'> <hr/> </div>";
     
-    
+    divElement.innerHTML="<div class='btn'><input class='eBtn' type='button' value='Edit' onClick='edit(this);'> <input class='rmBtn' type='button' value='Remove' onClick='rem(this);'> <hr/> </div>";
     divElement.innerHTML+=memoText;
     mc.appendChild(divElement);
+}
 
 }
 
