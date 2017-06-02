@@ -11,6 +11,7 @@ margin:0px;
 	background:#bcfff3 ;
 	color:black ;
 	padding: 10px;
+	position: relative;
 
 }
 img {
@@ -19,7 +20,7 @@ img {
 }
 .text_container , .addContainer {
 
-	    background-color: #fff58e;
+	background-color: #fffc6b;
     width: 30%;
     height: 200px;
     border: 1px solid black;
@@ -30,12 +31,10 @@ img {
     clear: none;
 	
 }
-
-.text_container:hover {
-	background: #fffc6b;
-	
-
+.text_container:hover ,.addContainer:hover {
+	background: #fffa00;
 }
+
 
 .btn {
 	margin:0px;
@@ -72,6 +71,29 @@ width: 50%;
     border-right: 1px solid #459148;
 
 }
+.class{
+	position: relative;
+}
+.green{
+background: green;
+border: solid black;
+width: 30%;
+}
+.red {
+
+	background: red;
+	border: solid black;
+	width: 30%;
+}
+.yellow{
+border: solid black;
+	background: yellow;
+	width: 30%;
+}
+
+
+
+
 #nMB { 
     width: 100%;
     }
@@ -103,6 +125,30 @@ background-color: #459148;
 	outline-color: black;
 	outline-width: 2px;
 }
+#sortBtn ,#helpBtn{
+	border:1px solid #fc4444;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width:20%;
+	height: 50%;
+	text-align: center;
+	font-size: 100%;
+	background-color: #fc8744;
+	color:white;
+}
+#helpBtn{
+	border-left: 0px;
+	left:20%;
+	width: 10%;
+
+}
+#sortBtn:hover , #helpBtn:hover {
+	background-color: #fc4444;
+}
+
+
+
 
 
 

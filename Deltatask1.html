@@ -9,16 +9,21 @@
 
 <body id='body'>
 <div class="header">
-<h2 style="text-align: center;">Welcome to Note Creator</h2>
+<h1 style="text-align: center;">Welcome to Note Creator</h1>
+<button onclick="sort();" id='sortBtn'>Sort The Notes</button>
+<button onclick="help();" id='helpBtn'>Help</button>
 </div>
 
 <div id="memo_container">
-<div class="text_container">
+<div class="text_container" pv="2">
 <div class="btn">
 	<input class="eBtn" type="button" value="Edit" onclick="edit(this);">
 	<input class="rmBtn" type='button' value='Remove' onClick='rem(this)'>
-	
 </div>
+<div class="priority">
+	<input class="red" type="button" onclick="red(this);"><input class="green" type="button" onclick="green(this);"><input class="yellow" type="button" onclick="yellow(this);">
+</div>
+
 	Sample Note............
 
 </div>
@@ -31,7 +36,6 @@
 	<div contenteditable id='memoText' style="height: 135px"></div>
 
 </div>
-
 </div> 
 </body>
 <script type="text/javascript">
