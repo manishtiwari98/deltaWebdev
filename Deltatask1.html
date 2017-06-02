@@ -8,36 +8,34 @@
 </script>
 
 <body id='body'>
-<div class="header"> <h2>Welcome to <strong>Note creator</strong></h2> Create, Edit and Save Notes
+<div class="header">
+<h2 style="text-align: center;">Welcome to Note Creator</h2>
 </div>
 
 <div id="memo_container">
-
 <div class="text_container">
 <div class="btn">
 	<input class="eBtn" type="button" value="Edit" onclick="edit(this);">
 	<input class="rmBtn" type='button' value='Remove' onClick='rem(this)'>
-	<hr/>
+	
 </div>
-	note 1
+	Sample Note............
 
 </div>
 </div>
 <div class="textdiv">
-<hr/>
- <textarea rows='4' cols="50" id='memoText' value=''></textarea>
-<br/>
-<button id='nMB' onclick="addMemo();">Create New memo</button>
+<div  class="addContainer" >
+<div class="btn">
+<input type="button" id='nMB' onclick="addMemo();" value="Create New memo">
+	</div>
+	<div contenteditable id='memoText' style="height: 135px"></div>
+
+</div>
+
 </div> 
-
-
-<button onclick="storeLocally();">store</button>
-<button onclick="retrive();">retrieve</button>
 </body>
 <script type="text/javascript">
-	
+retrive();
 </script>
-
-
 
 </html>

@@ -1,6 +1,5 @@
-
 function addMemo(){
-	var memoText=document.getElementById('memoText').value;
+	var memoText=document.getElementById('memoText').innerHTML;
 	if(memoText=='')
 		alert("Pls Enter Some Text");
 	else {
@@ -8,11 +7,11 @@ function addMemo(){
     var divElement=document.createElement('div');
     divElement.className='text_container';
     
-    divElement.innerHTML="<div class='btn'><input class='eBtn' type='button' value='Edit' onClick='edit(this);'> <input class='rmBtn' type='button' value='Remove' onClick='rem(this);'> <hr/> </div>";
+    divElement.innerHTML="<div class='btn'><input class='eBtn' type='button' value='Edit' onClick='edit(this);'> <input class='rmBtn' type='button' value='Remove' onClick='rem(this);'></div>";
     divElement.innerHTML+=memoText;
     mc.appendChild(divElement);
 }
-
+storeLocally();
 }
 
 function edit(id){
@@ -28,6 +27,7 @@ target.contentEditable='false';
 id.value="Edit";
 
 }
+storeLocally();
 }
 
 
@@ -35,6 +35,7 @@ function rem(id){
 
 var x=id.parentElement.parentElement;
 x.parentNode.removeChild(x);
+storeLocally();
 }
 
 function storeLocally(){
