@@ -6,12 +6,13 @@ function addMemo(){
 	var mc=document.getElementById('memo_container');
     var divElement=document.createElement('div');
     divElement.className='text_container';
+    divElement.pv=2;
     
     divElement.innerHTML="<div class='btn'><input class='eBtn' type='button' value='Edit' onClick='edit(this);'> <input class='rmBtn' type='button' value='Remove' onClick='rem(this);'></div>";
     divElement.innerHTML+='<div class="priority"><input class="red" type="button" onclick="red(this);"><input class="green" type="button" onclick="green(this);"><input class="yellow" type="button" onclick="yellow(this);"></div>';
     divElement.innerHTML+=memoText;
     mc.appendChild(divElement);
-}divElement.pv=2;
+}
 storeLocally();
 }
 
