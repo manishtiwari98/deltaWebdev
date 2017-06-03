@@ -103,7 +103,7 @@ function help(){
 
 function pv(id){
 
-	var color=id.style.background;
+	var color=id.style.backgroundColor;
 
 	if(color=='rgb(249, 79, 82)')
 		return 1;
