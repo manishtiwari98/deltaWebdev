@@ -96,6 +96,8 @@ function swap(id1,id2){
 	
 }
 
+/* Congratulations Bro, for Delta Web Dev, You're INducted
+
 function help(){
 
 	alert("Priortize your notes by choosing colors:\nRed: High priority\nYellow: Medium priority \nGreen: Low priority.");
