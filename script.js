@@ -1,3 +1,4 @@
+//Good job ma nigguh
 function addMemo(){
 	var memoText=document.getElementById('memoText').innerHTML;
 	if(memoText=='')
